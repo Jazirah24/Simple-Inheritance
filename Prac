@@ -1,0 +1,24 @@
+interface Payment {
+      void processPayment();
+}
+
+class CreditCardPayment implements Payment{
+       public void processPayment() {
+          System.out.println("10000shs");
+}
+ }
+class MobileMoneyPayment implements Payment{
+        public void processPayment() {
+          System.out.println("10000shs");
+}
+ }
+
+public class Main {
+     public static void Main(String[] args) {
+      Payment p1 = new CreditCardPayment();
+      Payment p2 = new MobileMoneyPayment();
+
+      p1.processPayment();
+      p2.processPayment();
+}
+  }
