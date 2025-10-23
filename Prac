@@ -14,7 +14,7 @@ class MobileMoneyPayment implements Payment{
  }
 
 public class Main {
-     public static void Main(String[] args) {
+     public static void main(String[] args) {
       Payment p1 = new CreditCardPayment();
       Payment p2 = new MobileMoneyPayment();
 
