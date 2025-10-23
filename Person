@@ -1,0 +1,25 @@
+class Person {
+    String name;
+    Person(String name) {
+        this.name = name;
+    }
+}
+
+class Student extends Person {
+    int studentId;
+    Student(String name, int studentId) {
+        super(name); // call parent constructor
+        this.studentId = studentId;
+    }
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + studentId);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student("Aisha", 1023);
+        s.display();
+    }
+}
